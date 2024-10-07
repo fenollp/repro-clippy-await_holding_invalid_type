@@ -1,0 +1,6 @@
+await-holding-invalid-types = [
+  # You can specify a type name
+  "CustomLockType",
+  # You can (optionally) specify a reason
+  { path = "OtherCustomLockType", reason = "Relies on a thread local" }
+]

@@ -1,4 +1,22 @@
-[package]
-name = "libcrate"
+[workspace]
+resolver = "2"
+default-members = ["."]
+members = [
+    ".",
+    "othercrate",
+]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
+
+[workspace.dependencies]
+othercrate.path = "./othercrate"
+
+[package]
+name = "libcrate"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+othercrate.workspace = true

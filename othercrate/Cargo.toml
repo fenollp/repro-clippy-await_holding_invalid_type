@@ -1,0 +1,4 @@
+[package]
+name = "othercrate"
+edition.workspace = true
+version.workspace = true
